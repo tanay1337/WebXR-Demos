@@ -1,0 +1,35 @@
+<!doctype HTML>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <a-assets>
+      <a-asset-item id="pikachu" src="assets/models/pikachu/model.dae"></a-asset-item>
+      <a-asset-item id="squirtle" src="assets/models/squirtle/model.dae"></a-asset-item>
+      <a-asset-item id="bulbasaur" src="assets/models/bulbasaur/model.dae"></a-asset-item>
+      <a-asset-item id="flareon" src="assets/models/flareon/model.dae"></a-asset-item>
+      <a-asset-item id="pokemon_ball" src="assets/models/pokemon_ball/model.dae"></a-asset-item>
+      </a-assets>
+    
+    <a-marker preset="hiro">
+        <a-entity>
+          <a-entity collada-model="#pokemon_ball" position="0 0.5 0" scale="5 5 5"></a-entity>
+          <a-animation attribute="rotation"
+          dur="6000"
+          fill="forwards"
+          to="0 360 0"
+          repeat="indefinite" easing="linear"></a-animation>
+        </a-entity>
+
+        <a-entity collada-model="#pikachu" position="0 0 1" scale="5 5 5" rotation="0 180 0"></a-entity>
+        <a-entity collada-model="#squirtle" position="0 0 -1" scale="8 8 8"></a-entity>
+        <a-entity collada-model="#bulbasaur" position="-1.5 0 0" scale="5 5 5" rotation="0 90 0"></a-entity>
+        <a-entity collada-model="#flareon" position="1.5 0 0" rotation="0 -90 0" scale="0.5 0.5 0.5"></a-entity>   
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>

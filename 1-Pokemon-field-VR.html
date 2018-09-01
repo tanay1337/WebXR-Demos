@@ -1,0 +1,83 @@
+<!doctype HTML>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene fog="type: linear; color: #7EC0EE">
+      <a-assets>
+        <a-asset-item id="pikachu" src="assets/models/pikachu/model.dae"></a-asset-item>
+        <a-asset-item id="squirtle" src="assets/models/squirtle/model.dae"></a-asset-item>
+        <a-asset-item id="arcanine" src="assets/models/arcanine/model.dae"></a-asset-item>
+        <a-asset-item id="bayleef" src="assets/models/bayleef/model.dae"></a-asset-item>
+        <a-asset-item id="beedrill" src="assets/models/beedrill/model.dae"></a-asset-item>
+        <a-asset-item id="blastoise" src="assets/models/blastoise/model.dae"></a-asset-item>
+        <a-asset-item id="bulbasaur" src="assets/models/bulbasaur/model.dae"></a-asset-item>
+        <a-asset-item id="charizard" src="assets/models/charizard/model.dae"></a-asset-item>
+        <a-asset-item id="charmander" src="assets/models/charmander/model.dae"></a-asset-item>
+        <a-asset-item id="chikorita" src="assets/models/chikorita/model.dae"></a-asset-item>
+        <a-asset-item id="croconaw" src="assets/models/croconaw/model.dae"></a-asset-item>
+        <a-asset-item id="entei" src="assets/models/entei/model.dae"></a-asset-item>
+        <a-asset-item id="flareon" src="assets/models/flareon/model.dae"></a-asset-item>
+        <a-asset-item id="lapras" src="assets/models/lapras/model.dae"></a-asset-item>
+        <a-asset-item id="leafeon" src="assets/models/leafeon/model.dae"></a-asset-item>
+        <a-asset-item id="mew" src="assets/models/mew/model.dae"></a-asset-item>
+        <a-asset-item id="mewtwo" src="assets/models/mewtwo/model.dae"></a-asset-item>
+        <a-asset-item id="moltres" src="assets/models/moltres/model.dae"></a-asset-item>
+        <a-asset-item id="raikou" src="assets/models/raikou/model.dae"></a-asset-item>
+        <a-asset-item id="reshiram" src="assets/models/reshiram/model.dae"></a-asset-item>
+        <a-asset-item id="tentacruel" src="assets/models/tentacruel/model.dae"></a-asset-item>
+        <a-asset-item id="vaporeon" src="assets/models/vaporeon/model.dae"></a-asset-item>
+        <a-asset-item id="zapdos" src="assets/models/zapdos/model.dae"></a-asset-item>
+        <a-asset-item id="pokemon_ball" src="assets/models/pokemon_ball/model.dae"></a-asset-item>
+
+        <img id="tile" src="assets/textures/tile.jpg">
+        <img id="wall" src="assets/textures/wall.jpg">
+
+      </a-assets>
+      
+      <a-entity>
+        <a-entity collada-model="#pokemon_ball" position="0 2 0" scale="25 25 25"></a-entity>
+        <a-animation attribute="rotation"
+        dur="9000"
+        fill="forwards"
+        to="0 360 0"
+        repeat="indefinite" easing="linear"></a-animation>
+      </a-entity>
+
+      <a-entity collada-model="#pikachu" position="-2.325 0 1" scale="5 5 5"></a-entity>
+      <a-entity collada-model="#squirtle" position="1.938 0 1" scale="8 8 8"></a-entity>
+      <a-entity collada-model="#arcanine" position="3.172373672412146 0 -10.463618024326928" scale="0.08 0.08 0.08"></a-entity>
+      <a-entity collada-model="#bayleef" position="-8.346438663676665 0 -10.828158879715936" scale="0.4 0.4 0.4"></a-entity>
+      <a-entity collada-model="#beedrill" position="11.887310339839186 0 -6.813443540794708" scale="0.08 0.08 0.08"></a-entity>
+      <a-entity collada-model="#blastoise" position="-4.9540275812084875 0 -10.710406435372562" scale="0.5 0.5 0.5"></a-entity>
+      <a-entity collada-model="#bulbasaur" position="12.228592998158984 0 -9.020987371007337" scale="5 5 5"></a-entity>
+      <a-entity collada-model="#charizard" position="7.822324275485801 0 -10.276797536160013" scale="0.8 0.8 0.8"></a-entity>
+      <a-entity collada-model="#charmander" position="-2.1343548835784887 0 -9.700651668536363" scale="1 1 1"></a-entity>
+      <a-entity collada-model="#chikorita" position="0.10693766309486463 0 -11.428982453063227" scale="1 1 1"></a-entity>
+      <a-entity collada-model="#croconaw" position="-11.888505967808658 0 -10.905994787957896" scale="0.8 0.8 0.8"></a-entity>
+      <a-entity collada-model="#entei" position="12.30674174550177 0 -0.3359065630863243" rotation="0 -90 0" scale="0.4 0.4 0.4"></a-entity>
+      <a-entity collada-model="#flareon" position="12.113592769450065 0 2.769000482907182" rotation="0 -90 0" scale="0.5 0.5 0.5"></a-entity>
+      <a-entity collada-model="#lapras" position="10.71920253808372 0 4.924438801034233" rotation="0 -90 0" scale="0.005 0.005 0.005"></a-entity>
+      <a-entity collada-model="#leafeon" position="11.001224513702672 0 9.982313449358951" rotation="0 -90 0" scale="2 2 2"></a-entity>
+      <a-entity collada-model="#mew" position="-13.809954211308632 0 -6.954322110493483" rotation="0 90 0" scale="1.5 1.5 1.5"></a-entity>
+      <a-entity collada-model="#mewtwo" position="-14.004481405169585 0 -3.115427144882963" rotation="0 90 0" scale="0.5 0.5 0.5"></a-entity>
+      <a-entity collada-model="#moltres" position="-13.39486438422023 0 1.8502117217147886" rotation="0 90 0" scale="0.3 0.3 0.3"></a-entity>
+      <a-entity collada-model="#raikou" position="12.454311559416542 0 -3.5656364811814667" rotation="0 -90 0" scale="0.4 0.4 0.4"></a-entity>
+      <a-entity collada-model="#reshiram" position="-14.340660827205074 0 6.643658419135726" rotation="0 90 0" scale="0.3 0.3 0.3"></a-entity>
+      <a-entity collada-model="#tentacruel" position="-13.472954124534592 0 11.172661671222258" rotation="0 90 0" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity collada-model="#umbreon" position="-18.489365941543443 0 0" rotation="0 90 0" scale="1.5 1.5 1.5"></a-entity>
+      <a-entity collada-model="#vaporeon" position="-13.12073536514313 0 13.379061790095424" rotation="0 90 0" scale="1.5 1.5 1.5"></a-entity>
+      <a-entity collada-model="#zapdos" position="12.442 -6.158 14.426" rotation="0 -90 0" scale="0.5 0.5 0.5"></a-entity>
+
+      <a-box material="src: #wall; repeat: 20 2;" position="20.203 0 2.917" scale="1 1 20" depth="2" height="6" width="0.5"></a-box>
+      <a-box material="src: #wall; repeat: 20 2;" position="-19.628 0 2.917" scale="1 1 20" depth="2" height="6" width="0.5"></a-box>
+      <a-box material="src: #wall; repeat: 20 2;" position="0 0 -16.805" scale="1 1 20" rotation="0 90 0" depth="2" height="6" width="0.5"></a-box>
+      <a-box material="src: #wall; repeat: 20 2;" position="0 0 22.556" scale="1 1 20" rotation="0 90 0" depth="2" height="6" width="0.5"></a-box>
+
+
+      <a-plane position="0 0 0" rotation="-90 0 0" scale="20 20 20" width="4" height="4" color="#7BC8A4" material="src: #tile; repeat: 40 40;"></a-plane>
+      <a-sky color="#7EC0EE"></a-sky>
+    </a-scene>
+  </body>
+</html>
